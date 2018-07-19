@@ -1,0 +1,25 @@
+PODS:
+  - ASPrivateKit/UIExtension (0.1.0):
+    - Masonry
+  - ASPrivateKit/Utility (0.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - ASPrivateKit/UIExtension (from `../`)
+  - ASPrivateKit/Utility (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  ASPrivateKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASPrivateKit: b0cfdd36328b11abd2e9ab5123492b9fca8da358
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: c0db737b3609e61a8fa3699a5f12d36ae1afa702
+
+COCOAPODS: 1.5.0

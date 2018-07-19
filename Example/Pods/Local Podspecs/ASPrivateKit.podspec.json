@@ -1,0 +1,37 @@
+{
+  "name": "ASPrivateKit",
+  "version": "0.1.0",
+  "summary": "A short description of ASPrivateKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Andrewmika/ASPrivateKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Andrewmika": "iandrew@126.com"
+  },
+  "source": {
+    "git": "https://github.com/Andrewmika/ASPrivateKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ASPrivateKit/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "UIExtension",
+      "source_files": "ASPrivateKit/Classes/UIExtension/**/*",
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "Utility",
+      "source_files": "ASPrivateKit/Classes/Utility/**/*"
+    }
+  ]
+}
