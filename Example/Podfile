@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ASPrivateKit_Tests' do
+  pod 'ASPrivateKit', :path => '../'
+  
+  
+end
