@@ -17,15 +17,15 @@
 - (void)as_addBottomLineWithLeftOffset:(CGFloat)leftOffset rightOffset:(CGFloat)rightOffset;
 @end
 
-#param mark - UILable
+#pragma mark - UILable
 @interface UILabel (AEX)
 
 + (UILabel *)as_createLabelWithFont:(UIFont *)font color:(UIColor *)color;
 
 @end
 
-#param mark - UIButton
-@interface UIButton (EX)
+#pragma mark - UIButton
+@interface UIButton (AEX)
 
 + (UIButton *)as_createButtonWithNormalBGColor:(UIColor *)bgColor titleColor:(UIColor *)titleColor titleFont:(UIFont *)titleFont normalTitle:(NSString *)normalTitle;
 @end

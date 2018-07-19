@@ -6,8 +6,9 @@
 //
 
 #import "UIView+AEX.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 #import "UIImage+AEX.h"
+#import <objc/runtime.h>
 
 @implementation UIView (AEX)
 - (UIView *)bottomLine {
@@ -37,8 +38,8 @@
 }
 @end
 
-#param mark - UILable
-@implementation UILabel (EX)
+#pragma mark - UILable
+@implementation UILabel (AEX)
 
 + (UILabel *)as_createLabelWithFont:(UIFont *)font color:(UIColor *)color {
     UILabel *lb = [UILabel new];
@@ -49,12 +50,15 @@
 }
 @end
 
-#param mark - UIButton
+#pragma mark - UIButton
+@implementation UIButton (AEX)
+
 + (UIButton *)as_createButtonWithNormalBGColor:(UIColor *)bgColor titleColor:(UIColor *)titleColor titleFont:(UIFont *)titleFont normalTitle:(NSString *)normalTitle {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.titleLabel.font = titleFont;
     [button setTitleColor:titleColor forState:UIControlStateNormal];
     [button setTitle:normalTitle ?: @"" forState:UIControlStateNormal];
-    [button setBackgroundImage:[UIImage at_imageWithColor:bgColor] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage as_imageWithColor:bgColor] forState:UIControlStateNormal];
     return button;
 }
+@end

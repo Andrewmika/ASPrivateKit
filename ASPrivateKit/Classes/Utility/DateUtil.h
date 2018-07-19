@@ -34,7 +34,7 @@
 /**
  *  将时长秒数转换为带角标的分秒string格式
  *
- *  @param integer 时长（秒）
+ *  @param timeinterval 时长（秒）
  *
  *  @return 带角标的分秒string
  */
